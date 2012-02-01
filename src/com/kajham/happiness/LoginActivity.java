@@ -82,6 +82,7 @@ public class LoginActivity extends Activity {
 
 					@Override
 					public void done(ParseException e) {
+						removeDialog(DIALOG_SIGNUP_IN_PROGRESS);
 						if (e == null) {
 							showDialog(DIALOG_SIGNUP_SUCCESSFUL);
 						} else {
@@ -89,8 +90,11 @@ public class LoginActivity extends Activity {
 						}
 					}
 				});
+				showDialog(DIALOG_SIGNUP_IN_PROGRESS);
 			}
 		});
+		
+		
 	}
 
 	@Override
