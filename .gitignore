@@ -1,0 +1,9 @@
+bin/classes.dex
+bin/resources.ap_
+bin/classes
+bin/res
+gen/
+src/com/kajham/parachute/utils/KeyUtils.java
+.settings/
+.project
+.classpath
